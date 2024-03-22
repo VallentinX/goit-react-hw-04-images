@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 
 import Searchbar from "./Searchbar/SearchBar.jsx";
 import ImageGallery from "./ImageGallery/ImageGallery.jsx";
@@ -94,10 +93,10 @@ const App = () => {
       }
     };
 
-    if (page !== 1) {
+    if (page !== 1 || query) {
       fetchData();
     }
-  }, [page]);
+  }, [page, query]);
 
   return (
     <div>
