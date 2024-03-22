@@ -73,6 +73,7 @@ const App = () => {
 
   useEffect(() => {
     handleInitialLoad();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
