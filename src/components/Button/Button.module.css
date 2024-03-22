@@ -1,0 +1,13 @@
+button {
+  padding: 10px 15px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom right, #ee0, #0dd);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom right, #0dd, #ee0);
+}

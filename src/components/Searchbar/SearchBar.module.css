@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  background-image: linear-gradient(to bottom right, #ee0, #0dd);
+  position: relative;
+  border-radius: 0px 0px 20px 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  padding: 0px 20px;
+  outline: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+}
+button.SearchButton {
+  margin: 0;
+  height: 40px;
+  background-image: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+}
+button.SearchButton:hover {
+  background-image: none;
+}
+.SearchIcon {
+  color: #000;
+}
