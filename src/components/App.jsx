@@ -100,19 +100,23 @@ const App = () => {
   }, [page, query]);
 
   return (
-    <div>
+    <>
       <Searchbar onSubmit={handleSearch} />
+
       <ImageGallery images={images} onImageClick={handleImageClick} />
+
       {loading && <Loader />}
+
       {hasMoreImages && (
         <Button onClick={handleLoadMore} show={hasMoreImages}>
           Load more
         </Button>
       )}
+
       {showModal && (
         <Modal onClose={handleCloseModal} largeImageURL={largeImageURL} />
       )}
-    </div>
+    </>
   );
 };
 
